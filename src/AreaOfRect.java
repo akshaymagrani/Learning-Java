@@ -1,12 +1,17 @@
+import java.util.Scanner;
 
 public class AreaOfRect {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int length = 20;
-		int breadth = 25;
-		int area = length * breadth;
-		System.out.println("Area: " + area);
+		try (Scanner scanF = new Scanner(System.in)) 
+		{
+			System.out.print("Length: ");
+			int length = scanF.nextInt();
+			System.out.print("Breadth: ");
+			int breadth = scanF.nextInt();
+			int area = length * breadth;
+			System.out.println("Area: " + area);
+		}
 	}
 
 }
